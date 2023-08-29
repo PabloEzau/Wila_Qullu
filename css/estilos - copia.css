@@ -1,0 +1,370 @@
+
+/*CÓDIGO DEL ENCABEZADO*/
+#banner{
+    display:flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+.container
+{
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+header
+{
+    background: #000000;
+    color: #ff0202;
+    padding: 1em 0;
+    position: relative;
+}
+header::after
+{
+    content: '';
+    clear: both;
+    display: block;
+}
+.logo
+{
+    padding: 10px;
+    float: left;
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.logo span
+{
+    font-weight: 300;
+}
+.site-nav
+{
+    top:100%;
+    right:0;
+    position: absolute;
+    background: #464655;
+    clip-path: circle(0px at top right);
+    transition: clip-path ease-in-out 700ms;
+}
+.site-nav-open{
+    clip-path: circle(150% at top right);
+}
+.site-nav ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-nav li
+{
+    border-bottom: 1px solid #575766;
+}
+.site-nav li:last-child
+{
+    border-bottom: none;
+}
+.site-nav a
+{
+    color: #ff0000;
+    display: block;
+    padding: 2em 6em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.site-nav a:hover, .site-nav a:focus
+{
+    background: #7e4747;
+    color: #ffffff;
+}
+.site-nav--icon
+{
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: rgba(255, 255, 255, .4);
+}
+.menu-toggle
+{   
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;   
+}
+.menu-open .hamburger
+{
+    transform: rotate(45deg);
+}
+.menu-open .hamburger::before
+{
+    opacity: 0;
+}
+.menu-open .hamburger::after
+{
+    transform: translateY(-3px) rotate(-90deg);
+}
+.hamburger, .hamburger::before, .hamburger::after
+{
+    content: '';
+    display: block;
+    background: #ff0000;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;
+    
+}
+.hamburger::before
+{
+    transform: translateY(-6px);
+}
+.hamburger::after
+{
+    transform: translateY(3px);
+}
+@media (min-width:700px)
+{
+  .menu-toggle
+  {
+    display: none;
+  } 
+  .site-nav
+  {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+    margin-right: 10px;
+    clip-path: initial;
+  } 
+  .site-nav li
+  {
+    display: inline-block;
+    border: none;
+  }
+  .site-nav a
+  {
+    padding: 0;
+    margin-left: 3em;
+  }
+  .site-nav--icon
+  {
+    display: none;
+  }
+  .site-nav a:hover, .site-nav a:focus
+  {
+    background: transparent;
+  }
+}
+/*FIN DEL CÓDIGO DEL ENCABEZADO*/
+/*CÓDIGO DE LOS ESTILOS DEL VIDEO DE FONDO*/
+/*.fondovideo
+{
+    position: relative;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+}*/
+
+video {  
+    
+    width: 100%;
+    height: 100%;
+    position: fixed;   
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);  
+    z-index: -3%;
+    background-size: cover;
+  }
+
+
+/*FIN DEL CÓDIGO DE LOS ESTILOS DEL VIDEO DE FONDO*/
+/*CÓDIGO DE LOS ESTILOS DEL PIE DE PAGINA*/
+section
+
+.logo1
+{
+    height: 150px;
+    border-color: rgb(255, 255, 255);
+    margin-top: 0%;
+}
+.footer-distributed
+{
+	background: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right
+{
+	display: inline-block;
+	vertical-align: top;
+}
+.footer-distributed .footer-left
+{
+	width: 40%;
+}
+.footer-distributed h3
+{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+.footer-distributed h3 span
+{
+	color:  rgb(255, 0, 0);
+    border: #ffffff;
+}
+.footer-distributed .footer-links
+{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+.footer-distributed .footer-links a
+{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer-distributed .footer-company-name
+{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-distributed .footer-center
+{
+	width: 35%;
+}
+.footer-distributed .footer-center i
+{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-envelope
+{
+	font-size: 17px;
+	line-height: 38px;
+}
+.footer-distributed .footer-center p
+{
+	display: inline-block;
+	color: #ffffff;
+    font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+.footer-distributed .footer-center p span
+{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+.footer-distributed .footer-center p a
+{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+.footer-distributed .footer-links a:before 
+{
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+.footer-distributed .footer-links .link-1:before 
+{
+  content: none;
+}
+.footer-distributed .footer-right
+{
+	width: 20%;
+}
+.footer-distributed .footer-company-about
+{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.footer-distributed .footer-icons
+{
+	margin-top: 25px;
+}
+.footer-distributed .footer-icons a
+{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+@media (max-width: 880px) 
+{
+	.footer-distributed
+    {
+		font: bold 14px sans-serif;
+	}
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right    
+    {
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.footer-distributed .footer-center i
+    {
+		margin-left: 0;
+	}
+}
+/*FIN DEL CÓDIGO DE LOS ESTILOS DEL PIE DE PAGINA*/
+/*CÓDIGO DE LOS ESTILOS DELAS REDES SOCIALES*/
+.iconos-sociales img
+{ 
+    transition:all 0.5s ease-out; 
+}
+.iconos-sociales img:hover
+{ 
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1); 
+    transform:translate(0px, -5px); 
+}

@@ -1,0 +1,35 @@
+.logo
+{
+    width: 200px;
+    border-color: black;
+}
+.container-fluid
+{
+    background-color: #666;
+}
+.form-control{
+    border-color: black;
+}
+.btn-outline-success
+{
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+.video{
+    display: flexbox;
+    width: 75%;
+    margin-left: 180px;
+}
+.Logo2{
+ 
+    
+    padding: 2em ;
+    position: relative;
+}
+#Aprende-Mas{
+    
+    color: #ff0202;
+    padding: 8em ;
+    position: relative;
+    font-size: black;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/estilosLo.css">
+</head>
+<body>
+   
+    <div class="contenedor-form">
+        <div class="toggle">
+        </div>
+        <div class="formulario">
+            <form action="#" id="frmRegUsuario">
+                <input type="text" id="txtnombre" placeholder="Nombres a Apellidos" required>
+                <input type="text" id="txtcelular" placeholder="Celular" required>
+                <input type="text" id="txtusuario" placeholder="Usuario" required>
+                <input type="password" id="txtpass" placeholder="Contraseña" required>                
+                <input type="submit" value="Registrarse" id="btnRegistro" onclick="registrar()">
+            </form>
+            <br>
+            <a class="fcc-btn" href="servicios.html">Has tu Pedido</a>
+        </div>
+    </div>
+    <div class="reset-password">
+        <a href="#">Olvide mi Contraseña?</a>
+    </div>
+        
+    </div>
+    <table id="tblusuario">
+        <thead>
+            <tr>
+                <th>Nombres a Apellidos</th>
+                <th>Celular</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="js/jquery-3.1.1.min.js"></script>    
+    <script src="js/main.js"></script>
+    <script src="js/Logica.js"></script>
+    <script src="js/LogicaInterfaz.js"></script>
+    <script src="js/Logica_login.js"></script>
+    
+</body>
+</html>

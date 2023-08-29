@@ -1,0 +1,20 @@
+.logo
+{
+    width: 200px;
+    border-color: black;
+}
+.container-fluid
+{
+    background-color: rgb(167, 167, 167);
+}
+.form-control{
+    border-color: black;
+}
+.btn-outline-success
+{
+    border-color: black;
+    color: black;
+}
+.d-flex{
+    padding-left: 20px;
+}
